@@ -142,7 +142,7 @@
     <dependencies>
         <dependency>
             <groupId>io.atomix</groupId>
-            <artifactId>atomix-server</artifactId>
+            <artifactId>atomix-node</artifactId>
             <version>${atomix.version}</version>
         </dependency>
         <dependency>

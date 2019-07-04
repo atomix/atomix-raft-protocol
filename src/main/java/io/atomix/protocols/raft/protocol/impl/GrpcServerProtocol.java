@@ -21,6 +21,8 @@ import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
+import io.atomix.node.management.ServiceFactory;
+import io.atomix.node.management.ServiceRegistry;
 import io.atomix.protocols.raft.protocol.AppendRequest;
 import io.atomix.protocols.raft.protocol.AppendResponse;
 import io.atomix.protocols.raft.protocol.CommandRequest;
@@ -45,8 +47,6 @@ import io.atomix.protocols.raft.protocol.TransferRequest;
 import io.atomix.protocols.raft.protocol.TransferResponse;
 import io.atomix.protocols.raft.protocol.VoteRequest;
 import io.atomix.protocols.raft.protocol.VoteResponse;
-import io.atomix.server.management.ServiceFactory;
-import io.atomix.server.management.ServiceRegistry;
 import io.atomix.utils.stream.StreamHandler;
 import io.grpc.stub.StreamObserver;
 

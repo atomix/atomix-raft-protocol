@@ -19,13 +19,13 @@ import java.net.ConnectException;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 
+import io.atomix.node.management.ServiceFactory;
 import io.atomix.protocols.raft.protocol.CommandRequest;
 import io.atomix.protocols.raft.protocol.CommandResponse;
 import io.atomix.protocols.raft.protocol.QueryRequest;
 import io.atomix.protocols.raft.protocol.QueryResponse;
 import io.atomix.protocols.raft.protocol.RaftClientProtocol;
 import io.atomix.protocols.raft.protocol.RaftServiceGrpc;
-import io.atomix.server.management.ServiceFactory;
 import io.atomix.utils.stream.StreamHandler;
 import io.grpc.stub.StreamObserver;
 

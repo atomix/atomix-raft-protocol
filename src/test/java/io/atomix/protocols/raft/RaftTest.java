@@ -33,14 +33,14 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
+import io.atomix.node.service.Command;
+import io.atomix.node.service.Query;
+import io.atomix.node.service.StateMachine;
 import io.atomix.protocols.raft.cluster.RaftClusterEvent;
 import io.atomix.protocols.raft.cluster.RaftMember;
 import io.atomix.protocols.raft.protocol.ReadConsistency;
 import io.atomix.protocols.raft.protocol.TestRaftProtocolFactory;
 import io.atomix.protocols.raft.storage.RaftStorage;
-import io.atomix.service.Command;
-import io.atomix.service.Query;
-import io.atomix.service.StateMachine;
 import io.atomix.storage.StorageLevel;
 import io.atomix.utils.concurrent.SingleThreadContext;
 import io.atomix.utils.concurrent.ThreadContext;

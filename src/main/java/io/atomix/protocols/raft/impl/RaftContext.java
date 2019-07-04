@@ -26,6 +26,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 import com.google.protobuf.Message;
+import io.atomix.node.service.StateMachine;
 import io.atomix.protocols.raft.RaftException;
 import io.atomix.protocols.raft.RaftServer;
 import io.atomix.protocols.raft.cluster.RaftMember;
@@ -53,7 +54,6 @@ import io.atomix.protocols.raft.storage.log.RaftLogWriter;
 import io.atomix.protocols.raft.storage.snapshot.SnapshotStore;
 import io.atomix.protocols.raft.storage.system.MetaStore;
 import io.atomix.protocols.raft.utils.LoadMonitor;
-import io.atomix.service.StateMachine;
 import io.atomix.storage.StorageException;
 import io.atomix.utils.concurrent.ComposableFuture;
 import io.atomix.utils.concurrent.SingleThreadContext;

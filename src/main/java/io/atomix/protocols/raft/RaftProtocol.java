@@ -24,17 +24,17 @@ import java.util.stream.Collectors;
 
 import com.google.common.base.Strings;
 import com.google.protobuf.util.JsonFormat;
+import io.atomix.node.management.Node;
+import io.atomix.node.management.ProtocolManagementService;
+import io.atomix.node.protocol.Protocol;
+import io.atomix.node.protocol.ProtocolClient;
+import io.atomix.node.protocol.ServiceProtocol;
+import io.atomix.node.service.impl.ServiceManagerStateMachine;
 import io.atomix.protocols.raft.protocol.RaftProtocolConfig;
 import io.atomix.protocols.raft.protocol.RaftServiceGrpc;
 import io.atomix.protocols.raft.protocol.impl.GrpcClientProtocol;
 import io.atomix.protocols.raft.protocol.impl.GrpcServerProtocol;
 import io.atomix.protocols.raft.storage.RaftStorage;
-import io.atomix.server.management.Node;
-import io.atomix.server.management.ProtocolManagementService;
-import io.atomix.server.protocol.Protocol;
-import io.atomix.server.protocol.ProtocolClient;
-import io.atomix.server.protocol.ServiceProtocol;
-import io.atomix.service.impl.ServiceManagerStateMachine;
 import io.atomix.storage.StorageLevel;
 import io.atomix.utils.component.Component;
 
